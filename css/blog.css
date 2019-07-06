@@ -13,7 +13,7 @@ body{
   width:100%;
   min-width: 1135px;
   height:250px;
-  background-image:url(../images/blog/bg-day.png);
+  background-image:url(http://www.zamonia.cn/statics/blog_images/blog/bg-day.png);
   background-repeat: repeat-x;
   background-size: auto 250px;
 }
@@ -24,10 +24,11 @@ body{
   left: 618px;
   top: 50px;
   width: 470px;
+  align-items: center;
 }
 #time_message{
   color: white;
-  font-size: 47px;
+  font-size: 40px;
   font-weight:bold;
   text-align:center;
 }
@@ -35,12 +36,14 @@ body{
   color: white;
   margin-top: 30px;
   font-size: 18px;
+  width:70%;
 }
 #mingyan_author{
   text-align: right;
   color: white;
   margin-top: 24px;
   font-size: 15px;
+  width:70%;
 }
 #head_container{
   background-color:#81ceef;
@@ -72,6 +75,7 @@ body{
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  justify-content: center;
 }
 
 /* article */
@@ -79,10 +83,11 @@ body{
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  flex-direction: column;
   margin:20px 20px 20px 12px;
-  width: 69%;
-  min-width: 750px;
-  padding: 0px 20px 30px 20px;
+  max-width: 900px;
+  min-width: 600px;
+  padding: 20px 30px 30px 30px;
   background-color: #fdfdfd;
   border:solid 1px lightgray;
   -moz-box-shadow: 2px 2px 5px 1px #a9a9a9;
@@ -98,7 +103,7 @@ body{
   flex-direction: column;
   margin-top: 20px;
   margin-right: 12px;
-  width:28%;
+  max-width:28%;
   min-width:300px;
 }
 
@@ -218,4 +223,11 @@ body{
   -ms-flex-direction: column;
   flex-direction: column;
   margin-top: 25px;
+}
+
+#girl{
+  position: fixed;
+  bottom: -5px;
+  right: 0px;
+  z-index: 100;
 }
